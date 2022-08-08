@@ -447,7 +447,7 @@ class Aardvark(object):
         self.i2c_master_write(i2c_address, data, I2C_NO_STOP)
         return self.i2c_master_read(i2c_address, length)
 
-    def i2c_free_bus(self, ignore_errors=True):
+    def i2c_stop(self, ignore_errors=True):
         """Free the Aardvark I2C subsystem from a held bus condition.
 
         Raises ERR_I2C_BUS_ALREADY_FREE if I2C bus was already free.
