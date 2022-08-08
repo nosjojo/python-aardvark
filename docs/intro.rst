@@ -91,7 +91,7 @@ This will write address device `0x50` and sends the byte sequence `0x00`,
 and issued in one transaction:
 :meth:`pyaardvark.Aardvark.i2c_master_write_read`.
 
-If the Aardvark is actively holding the bus, due to a master transaction
+If the Aardvark is actively holding the bus due to a master transaction
 with `I2C_NO_STOP` or an incomplete slave mode transaction, you can free the
 |I2C| bus::
 
